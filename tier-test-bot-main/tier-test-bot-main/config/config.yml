@@ -1,0 +1,76 @@
+# yaml used instead of json due to ease and ability to comment <3
+
+# bot requires a restart after updating config
+# bot messages can be updated in the json files in this directory
+# if some parts are missing, the bot will not work
+
+bot:
+    options:
+        cooldown: 1440  # enter time in minutes (will only work if database is sqlite or mysql)
+        queueLimit: 20  # max players in queue, dont go above something like 40 or the bot cant send a message
+        testerLimit: 500  # max number of testers per region
+        reloadQueue: 30 # time in seconds on how frequently you want to reload the queue, reccomended to stay above 15
+
+    messages:           # messages to send
+        noPermission: You do not have the permission to use this command.       # message to send if a user doesnt have permission to execute a command
+        notTicketCatagory: Command can only be ran inside of testing channels   # message to send if a user tries running /result in a non ticket catagory
+        resultMessageSent: Result message sent!                                 # message to send as an ephemeral after a user sucessfully runs /results
+        error: An error as occured                                              # message to send if the bot has an error
+        addToQueue: You have been added to queue!                               # message to send when a user is added to a queue
+        testerOpenQueue: "You have opened the queue!"                           # message to send when a tester opens a queue
+        alreadyInQueue: "You are already in the queue!"                         # message to send if a user is already in a queue
+        queueFull: "The queue is full!"                                         # message to send if the queue is full
+        notInQueue: "You are not in the queue!"                                 # message to send if a user is not in a queue when they try to leave
+        leaveQueue: "You have left the queue!"                                  # message to send when a user leaves the queue
+
+    channels:   # the format is channel: channel_id
+        results: 1398436706272809002        # post results
+        enterWaitlist: 1398844076442390579  # where users join a channel for a queue
+
+    catagories:
+        highTests: 1398829359074119812    # Catagory where users with a high tiers ticket will go
+
+    roles:      # the format is role: role_id
+        tester: 1387539314510008431
+
+    tiers:      # the format is tier: role_id
+        lt5: 1387810200228073693
+        ht5: 1387810156699713729
+        lt4: 1387810098205687981
+        ht4: 1387810017369002224
+        lt3: 1387809955956130007
+        ht3: 1387809876935311411
+        lt2: 1387770942666707045
+        ht2: 1387770863713128570
+        lt1: 1387770782477975562
+        ht1: 1387770640119107604
+
+    highTiers:  # tiers you want to create a seperate ticket for
+        - ht1
+        - lt1
+        - ht2
+        - lt2
+        - ht3
+
+    regions:    # you can always add more regions
+        EU: 
+            queue_channel: 1387542451295752302      # channel for queue to be posted in
+            ticket_catagory: 1398830694989303940    # catagory for tests to go in
+            role_ping: 1398861950611624006    # role to ping when queue is open
+        NA:    
+            queue_channel: 1398862207160418427
+            ticket_catagory: 1398862140823175308
+            role_ping: 1398862046614786148
+
+database:
+    # options are "mysql", "sqlite", only use mysql if you know what you are doing, if you switch, data will not transfer, you will need to write your own script to transfer the data
+    type: sqlite 
+
+    mysql:      # only use this if you know what you are doing
+        host: localhost
+        port: 3306
+        user: root
+        password: root
+        database: tiers # must be created before starting bot
+
+# UwU

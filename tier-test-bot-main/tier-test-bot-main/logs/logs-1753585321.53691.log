@@ -1,0 +1,3 @@
+2025-07-27 05:02:01,539:WARNING:nextcord.client: PyNaCl is not installed, voice will NOT be supported
+2025-07-27 05:02:01,539:INFO:nextcord.client: logging in using static token
+2025-07-27 05:02:01,649:INFO:nextcord.client: Closing the event loop.

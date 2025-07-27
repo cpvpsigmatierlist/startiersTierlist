@@ -1,0 +1,22 @@
+2025-07-27 05:07:19,067:WARNING:nextcord.client: PyNaCl is not installed, voice will NOT be supported
+2025-07-27 05:07:19,068:INFO:nextcord.client: logging in using static token
+2025-07-27 05:07:19,071:INFO:nextcord.http: Allowed 1 rate limits to be garbage collected.
+2025-07-27 05:07:19,647:INFO:nextcord.gateway: Shard ID None has sent the IDENTIFY payload.
+2025-07-27 05:07:19,920:INFO:nextcord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-us-east1-b-vqkk",{"micros":148108,"calls":["id_created",{"micros":555,"calls":[]},"session_lookup_time",{"micros":319,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"discord-sessions-prd-2-139",{"micros":146840,"calls":["start_session",{"micros":106422,"calls":["discord-api-rpc-6b75696855-prwnl",{"micros":78341,"calls":["get_user",{"micros":7644},"get_guilds",{"micros":2909},"send_scheduled_deletion_message",{"micros":16},"guild_join_requests",{"micros":4238},"authorized_ip_coro",{"micros":15},"pending_payments",{"micros":11578},"apex_experiments",{"micros":5616},"user_activities",{"micros":5},"played_application_ids",{"micros":2}]}]},"starting_guild_connect",{"micros":24,"calls":[]},"presence_started",{"micros":11490,"calls":[]},"guilds_started",{"micros":96,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":28790,"calls":[]},"connect_finished",{"micros":28794,"calls":[]},"build_ready",{"micros":12,"calls":[]},"clean_ready",{"micros":0,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 879a47d017205e4abc424ffa8276c85d). Resume URL specified as wss://gateway-us-east1-b.discord.gg
+2025-07-27 05:07:20,111:INFO:nextcord.state: nextcord.ConnectionState: Registering command with signature ('info', 1, None)
+2025-07-27 05:07:20,293:INFO:nextcord.state: nextcord.ConnectionState: Registering command with signature ('forceclosetest', 1, None)
+2025-07-27 05:07:20,748:INFO:nextcord.state: nextcord.ConnectionState: Registering command with signature ('remove', 1, None)
+2025-07-27 05:07:20,957:INFO:nextcord.state: nextcord.ConnectionState: Registering command with signature ('updatetier', 1, None)
+2025-07-27 05:07:21,145:INFO:nextcord.state: nextcord.ConnectionState: Registering command with signature ('closequeue', 1, None)
+2025-07-27 05:07:21,777:INFO:nextcord.state: nextcord.ConnectionState: Registering command with signature ('unrestrict', 1, None)
+2025-07-27 05:07:41,178:INFO:nextcord.state: nextcord.ConnectionState: Registering command with signature ('closetest', 1, None)
+2025-07-27 05:07:41,654:INFO:nextcord.state: nextcord.ConnectionState: Registering command with signature ('results', 1, None)
+2025-07-27 05:07:42,190:INFO:nextcord.state: nextcord.ConnectionState: Registering command with signature ('add', 1, None)
+2025-07-27 05:07:42,650:INFO:nextcord.state: nextcord.ConnectionState: Registering command with signature ('updateusername', 1, None)
+2025-07-27 05:07:43,100:INFO:nextcord.state: nextcord.ConnectionState: Registering command with signature ('openqueue', 1, None)
+2025-07-27 05:08:00,576:INFO:nextcord.state: nextcord.ConnectionState: Registering command with signature ('passeval', 1, None)
+2025-07-27 05:08:00,990:INFO:nextcord.state: nextcord.ConnectionState: Registering command with signature ('restrict', 1, None)
+2025-07-27 05:08:01,563:INFO:nextcord.state: nextcord.ConnectionState: Registering command with signature ('next', 1, None)
+2025-07-27 05:12:19,082:INFO:nextcord.http: Allowed 1 rate limits to be garbage collected.
+2025-07-27 05:17:19,092:INFO:nextcord.http: Allowed 1 rate limits to be garbage collected.
+2025-07-27 05:22:19,096:INFO:nextcord.http: Allowed 4 rate limits to be garbage collected.
